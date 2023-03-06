@@ -9,37 +9,64 @@
 </head>
 
 <body>
-  <form action="#" method="get">
-    <div>
-      <input type="text" name="username" value="Ann Black">
-    </div>
-    <br>
-    <div>
-      <input type="email" name="email" placeholder="mail@gmail.com">
-    </div>
-    <br>
-    <select name="goods">
-      <option value="soccer ball">soccer ball</option>
-      <option value="sneakers">sneakers</option>
-      <option value="shorts">shorts</option>
-    </select>
-    <select name="number">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="3">4</option>
-      <option value="3">5</option>
-      <option value="3">6</option>
-      <option value="3">7</option>
-      <option value="3">8</option>
-      <option value="3">9</option>
-      <option value="3">10</option>
-    </select>
-    <br>
-    <div>
-      <button type="submit">Submit</button>
-    </div>
-  </form>
+  <section>
+    <form action="#" method="get">
+      <div class="123">
+        <div>
+          <p>
+            <label for="user_name">Повне ім'я</label>
+          </p>
+          <input id="user_name" type="text" name="full_name" required>
+        </div>
+        <div>
+          <p>Email</p>
+          <input type="email" name="email" placeholder="mail@gmail.com" required>
+        </div>
+        <div>
+          <p>Пароль</p>
+          <input type="password" name="pass" required>
+        </div>
+        <div>
+          <p>Пароль ще раз</p>
+          <input type="password" name="pass" required>
+        </div>
+        <div>
+          <p>Стать</p>
+          <div>
+            <input type="radio" name="gender" value="male">Чоловіча
+            <input type="radio" name="gender" value="female">Жіноча
+          </div>
+        </div>
+        <div>
+          <p>Вік</p>
+          <input type="text" name="age" required>
+        </div>
+        <div>
+          <p>Курс</p>
+          <select name="course">
+            <option value="front-end">Front-End</option>
+            <option value="back-end">Back-End</option>
+            <option value="project-management">Project Management</option>
+            <option value="qa-manual">QA Manual</option>
+          </select>
+        </div>
+        <div>
+          <p>Повна адреса</p>
+          <div>
+            <textarea name="adress" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
+          </div>
+        </div>
+        <div>
+          <input type="checkbox" name="personal-data" value="yes" required>
+          Я погоджуюся з обробкою персональних даних.
+        </div>
+        <div>
+          <button type="reset">Очистити форму</button>
+          <button type="submit">Зареєструватися</button>
+        </div>
+      </div>
+    </form>
+  </section>
 </body>
 
 </html>
