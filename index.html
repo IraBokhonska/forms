@@ -6,61 +6,73 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./assets/normalize.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <section>
+  <section class="block-section">
     <form action="#" method="get">
-      <div class="123">
-        <div>
+      <div class="block block-user">
+        <div class="container user-name">
           <p>
             <label for="user_name">Повне ім'я</label>
           </p>
-          <input id="user_name" type="text" name="full_name" required>
+          <input class="style-user" id="user_name" type="text" name="full_name" required>
         </div>
-        <div>
+        <div class="container email">
           <p>Email</p>
-          <input type="email" name="email" placeholder="mail@gmail.com" required>
+          <input class="style-user" type="email" name="email" required>
         </div>
-        <div>
+        <div class="container pass">
           <p>Пароль</p>
-          <input type="password" name="pass" required>
+          <input class="style-user" type="password" name="pass" required>
         </div>
-        <div>
+        <div class="container pass-two">
           <p>Пароль ще раз</p>
-          <input type="password" name="pass" required>
+          <input class="style-user" type="password" name="pass" required>
         </div>
-        <div>
+        <div class="container genger-container">
           <p>Стать</p>
-          <div>
-            <input type="radio" name="gender" value="male">Чоловіча
-            <input type="radio" name="gender" value="female">Жіноча
+          <div class="gender">
+            <div class="gender-input">
+              <input type="radio" name="gender" value="male"> Чоловіча
+            </div>
+            <div class="gender-input">
+              <input type="radio" name="gender" value="female"> Жіноча
+            </div>
           </div>
         </div>
-        <div>
+        <div class="container age">
           <p>Вік</p>
-          <input type="text" name="age" required>
+          <input class="style-user" type="text" name="age" required>
         </div>
-        <div>
+        <div class="container course">
           <p>Курс</p>
-          <select name="course">
+          <select class="style-user" name="course">
             <option value="front-end">Front-End</option>
             <option value="back-end">Back-End</option>
             <option value="project-management">Project Management</option>
             <option value="qa-manual">QA Manual</option>
           </select>
         </div>
-        <div>
+        <div class="container adress">
           <p>Повна адреса</p>
           <div>
-            <textarea name="adress" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
+            <textarea class="style-user" name="adress" placeholder="Країна, регіон, місто/селище, вулиця"
+              required></textarea>
           </div>
         </div>
-        <div>
+      </div>
+      <div class="block block-footer">
+        <div class="container__personal-data">
           <input type="checkbox" name="personal-data" value="yes" required>
           Я погоджуюся з обробкою персональних даних.
         </div>
-        <div>
+        <br>
+        <div class="container form-button">
           <button type="reset">Очистити форму</button>
           <button type="submit">Зареєструватися</button>
         </div>
