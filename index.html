@@ -17,37 +17,35 @@
     <form action="#" method="get">
       <div class="block block-user">
         <div class="container user-name">
-          <p>
-            <label for="user_name">Повне ім'я</label>
-          </p>
-          <input class="style-user" id="user_name" type="text" name="full_name" required>
+          <label for="user_name">Повне ім'я</label>
+          <input class="style-user" id="user_name" type="text" name="full_name" required />
         </div>
         <div class="container email">
-          <p>Email</p>
-          <input class="style-user" type="email" name="email" required>
+          <label for="user_mail">Email</label>
+          <input class="style-user" id="user_mail" type="email" name="email" required />
         </div>
         <div class="container pass">
-          <p>Пароль</p>
-          <input class="style-user" type="password" name="pass" required>
+          <label for="user_pass">Пароль</label>
+          <input class="style-user" id="user_pass" type="password" name="pass" required />
         </div>
         <div class="container pass-two">
-          <p>Пароль ще раз</p>
-          <input class="style-user" type="password" name="pass" required>
+          <label for="user_pass2">Пароль ще раз</label>
+          <input class="style-user" id="user_pass2" type="password" name="pass2" required />
         </div>
         <div class="container genger-container">
-          <p>Стать</p>
+          <label for="user_gender">Стать</label>
           <div class="gender">
             <div class="gender-input">
-              <input type="radio" name="gender" value="male"> Чоловіча
+              <input id="user_gender" type="radio" name="gender" value="male" /> Чоловіча
             </div>
             <div class="gender-input">
-              <input type="radio" name="gender" value="female"> Жіноча
+              <input id="user_gender" type="radio" name="gender" value="female" /> Жіноча
             </div>
           </div>
         </div>
         <div class="container age">
-          <p>Вік</p>
-          <input class="style-user" type="text" name="age" required>
+          <label for="user_age">Вік</label>
+          <input id="user_age" class="style-user" type="text" name="age" required />
         </div>
         <div class="container course">
           <p>Курс</p>
@@ -59,19 +57,16 @@
           </select>
         </div>
         <div class="container adress">
-          <p>Повна адреса</p>
-          <div>
-            <textarea class="style-user" name="adress" placeholder="Країна, регіон, місто/селище, вулиця"
-              required></textarea>
-          </div>
+          <label for="adress">Повна адреса</label>
+          <textarea id="adress" class="style-user" name="adress" placeholder="Країна, регіон, місто/селище, вулиця"
+            required></textarea>
         </div>
       </div>
       <div class="block block-footer">
-        <div class="container__personal-data">
-          <input type="checkbox" name="personal-data" value="yes" required>
+        <input id="personal_data" type="checkbox" name="personal-data" value="yes" required />
+        <label for="personal_data" class="personal-data">
           Я погоджуюся з обробкою персональних даних.
-        </div>
-        <br>
+        </label>
         <div class="container form-button">
           <button type="reset">Очистити форму</button>
           <button type="submit">Зареєструватися</button>
